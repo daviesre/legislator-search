@@ -3,15 +3,16 @@
   <li>{{legislator.title}}. {{legislator.first_name}} {{legislator.middle_name}} {{legislator.last_name}} {{legislator.name_suffix}} {{gender-helper legislator}}</li>
   <ul>
     <li>Contact: <a href={{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
-    <li>{{legislator.phone}}</li>
-    <li> <a href={{emailLink}}>{{legislator.oc_email}}</a></li>
-    <li>{{legislator.office}}</li>
+    <li>{{fa-icon "phone"}} {{legislator.phone}}</li>
+    <li> {{fa-icon "envelope"}} <a href={{emailLink}}>{{legislator.oc_email}}</a></li>
+    <li> {{fa-icon "building"}} {{legislator.office}}</li>
     <ul>
-      <li> <a href={{twitterLink}} target="blank">@{{legislator.twitter_id}}</a></li>
-      {{#if legislator.youtube_id}}
-        <li> {{legislator.youtube_id}}</li>
+      {{#if legislator.twitter_id}}
+        <li> {{fa-icon "twitter"}} <a href={{twitterLink}} target="blank">@{{legislator.twitter_id}}</a></li>
       {{/if}}
-      <li>{{legislator.facebook_id}}</li>
+      {{#if legislator.youtube_id}}
+        <li> {{fa-icon "youtube"}} {{legislator.youtube_id}}</li>
+      {{/if}}
     </ul>
   </ul>
 </ul>
