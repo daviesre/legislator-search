@@ -1,0 +1,17 @@
+{{yield}}
+<ul>
+  <li>{{legislator.title}} {{legislator.first_name}} {{legislator.middle_name}} {{legislator.last_name}} {{legislator.name_suffix}}</li>
+  <ul>
+    <li>Contact: <a href={{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
+    <li>{{legislator.phone}}</li>
+    <li> <a href={{emailLink}}>{{legislator.oc_email}}</a></li>
+    <li>{{legislator.office}}</li>
+    <ul>
+      <li> <a href={{twitterLink}} target="blank">@{{legislator.twitter_id}}</a></li>
+      {{#if legislator.youtube_id}}
+        <li> {{legislator.youtube_id}}</li>
+      {{/if}}
+      <li>{{legislator.facebook_id}}</li>
+    </ul>
+  </ul>
+</ul>
