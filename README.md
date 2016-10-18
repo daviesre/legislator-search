@@ -1,7 +1,6 @@
-# Legislator-lookup
+# Legislator Lookup
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Allows the user to collect information on members of congress by entering a zip code via an API.
 
 ##### Create an .env file in the root directory with the contents of the API key:
 ###### export apiKey="KEYGOESHERE"
